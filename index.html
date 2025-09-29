@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desabafa Aí</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Desabafa Aí 📝</h1>
+
+  <div class="controls">
+    <label for="categoria">Filtrar por categoria:</label>
+    <select id="categoria-filtro">
+      <option value="Todos">Todos</option>
+      <option value="Geral">Geral</option>
+      <option value="Amor">Amor 💕</option>
+      <option value="Estudo">Estudo 📚</option>
+      <option value="Trabalho">Trabalho 💼</option>
+      <option value="Família">Família 👪</option>
+      <option value="Outros">Outros</option>
+    </select>
+
+    <button id="limpar-tudo">Limpar Tudo</button>
+    <button id="modo-escuro">🌙 Modo Escuro</button>
+  </div>
+
+  <form id="desabafo-form">
+    <input type="text" id="usuario" placeholder="Seu nome (opcional)">
+    <textarea id="texto" placeholder="Escreva o que está sentindo..." required></textarea>
+    <button type="submit">Enviar Desabafo</button>
+  </form>
+
+  <div id="notificacao"></div>
+
+  <h2>Desabafos recentes</h2>
+  <div id="desabafos-container"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
